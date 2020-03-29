@@ -2,9 +2,9 @@ FROM python:3
 
 COPY . /app
 COPY /Ativos.csv /app/Ativo.csv
-COPY requirements.txt /tmp
+COPY requirements.txt /app
 
-WORKDIR /tmp
+WORKDIR /app
 RUN pip install -r requirements.txt
 
 CMD [ "python", "/app/comparador.py" ]
