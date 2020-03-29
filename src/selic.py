@@ -14,4 +14,4 @@ def get_selic(data_base):
     max_date = (df_selic['data'].loc[(df_selic['data'] == df_selic[df_selic['data'] <= data_base]['data'].max())])
     max_rate = float(df_selic['valor'].loc[(df_selic['data'] == df_selic[df_selic['data'] <= data_base]['data'].max())])
 
-    return (max_rate.item()), (max_date.item())
+    return max_rate, (max_date.item())
