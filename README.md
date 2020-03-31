@@ -1,7 +1,7 @@
 # Investment
 
 ### Solution:
-The solution utilises a search method to get as close as possible to the IRR Rate.
+Considering the complexity to solve a higher degree polynomial equation, I decided to use a search-based method. I observed that the solution converged well after less than a 500 iterations. This approach reduces development complexity, as well as memory and processing consumption. This assumption may vary if the dataset is very large.
 
 ### Completed tasks:
 
