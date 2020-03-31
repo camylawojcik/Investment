@@ -3,6 +3,10 @@
 ### Solution:
 Considering the complexity to solve a higher degree polynomial equation, I decided to use a search-based method. I observed that the solution converged well after less than a 500 iterations. This approach reduces development complexity, as well as memory and processing consumption. This assumption may vary if the dataset is very large.
 
+**Selic Rate:** As there is no Selic rate for future dates, I considered the most recent daily rate available until day D (01/08/2020). Using this daily rate, I have accumulated this value for the entire investment period.
+
+The Selic Rate was obtained from the official Central Bank API: https://api.bcb.gov.br/dados/serie/bcdata.sgs.11/dados?formato=json
+
 ### Completed tasks:
 
 - <s>Read an CSV file with the assets;</s>
